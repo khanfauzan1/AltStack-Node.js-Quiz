@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Node.js Quiz Result</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="result-container container">
+    <h1>Quiz Result</h1>
+    <div class="score">Your score: <%= score %>/<%= questions.length %></div>
+   
+
+   <%  if (score >= 9) { %>
+      <% feedback = 'Excellent work! Your score is outstanding.'; %>
+    <% } else if (score >= 8) { %>
+     <%  feedback = 'Great job! You have a very good understanding of the Nodejs concept.'; %>
+   <%  } else if (score >= 7) { %>
+     <%  feedback = 'Well done! Your score is above average.'; %>
+   <%  } else if (score >= 6) {%>
+    <%  feedback = 'Not bad! You have a decent understanding of the Nodejs concept.'; %>
+   <% } else if (score >= 5) { %>
+     <% feedback = 'Your score is average. Keep practicing to improve.';%>
+    <%} else {%>
+      <%feedback = `Your score needs improvement. Don't worry, keep trying!`;%>
+    <% } %>
+   <p class="feedback-p"><i> <%= feedback %></i></p>
+
+    <% for (let i = 0; i < questions.length; i++) { %>
+      <div class="feedback">
+        <h3> <%= questions[i].question %></h3>
+        <ol type="A">
+          <% for (let j = 0; j < questions[i].options.length; j++) { %>
+            <li >
+              <% if (j === userAnswers[`question${i}`]) { %>
+                <span class="user-answer"><%= questions[i].options[j] %></span>
+              <% } else if (j === questions[i].correctAnswer) { %>
+                <span class="correct-answer"><%= questions[i].options[j] %></span>
+              <% } else { %>
+                <%= questions[i].options[j] %>
+              <% } %>
+            </li>
+          <% } %>
+        </ol>
+        <p>
+          <% if (userAnswers[`question${i}`] == questions[i].correctAnswer) { %>
+            <span class="correct">Correct</span>
+          <% } else { %>
+            <span class="incorrect">Incorrect</span>
+          <% } %>
+        </p>
+      </div>
+    <% } %>
+
+    <a href="/" class="go-back-btn">Go Back</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Node.js Quiz</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Node.js Quiz</h1>
+  <form action="/quiz" method="POST">
+    <div class="question">
+      <h3><%= question.question %></h3>
+      <% for (let j = 0; j < question.options.length; j++) { %>
+        <div class="option">
+          <input type="radio" name="answer" value="<%= j %>" >
+          <%= question.options[j] %>
+        </div>
+      <% } %>
+    </div>
+    <button class="next-btn" type="submit">Next</button>
+  </form>
+  </div>
+</body>
+</html>
+

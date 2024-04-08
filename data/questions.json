@@ -1,0 +1,102 @@
+[
+  {
+    "question": "1. What is Node.js?",
+    "options": [
+      "A web browser",
+      "A programming language",
+      "A runtime environment for executing JavaScript on the server",
+      "A database management system"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "2. What is the purpose of the 'require' function in Node.js?",
+    "options": [
+      "To import modules",
+      "To export modules",
+      "To create a new file",
+      "To delete a file"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "3. What is the event loop in Node.js?",
+    "options": [
+      "A way to handle blocking I/O operations",
+      "A mechanism to execute JavaScript code",
+      "A queue that handles non-blocking I/O operations",
+      "A way to handle synchronous operations"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "4. Which of the following is a core module in Node.js?",
+    "options": [
+      "http",
+      "react",
+      "angular",
+      "vue"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "5. What is the purpose of the 'process' object in Node.js?",
+    "options": [
+      "To handle user input",
+      "To handle file operations",
+      "To provide information about the current Node.js process",
+      "To handle network operations"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "6. What is the purpose of the 'fs' module in Node.js?",
+    "options": [
+      "To handle file system operations",
+      "To handle network operations",
+      "To handle user input",
+      "To handle database operations"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "7. What is the purpose of the 'npm' command in Node.js?",
+    "options": [
+      "To install and manage Node.js packages",
+      "To run Node.js scripts",
+      "To create new Node.js projects",
+      "To update the Node.js runtime"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "8. What is the purpose of the 'express' module in Node.js?",
+    "options": [
+      "A web application framework for Node.js",
+      "A database management system",
+      "A testing framework for Node.js",
+      "A package manager for Node.js"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "9. What is the purpose of the 'Buffer' class in Node.js?",
+    "options": [
+      "To handle binary data",
+      "To handle user input",
+      "To handle file operations",
+      "To handle network operations"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "10. What is the purpose of the 'stream' module in Node.js?",
+    "options": [
+      "To handle file system operations",
+      "To handle network operations",
+      "To handle user input",
+      "To handle streaming data"
+    ],
+    "correctAnswer": 3
+  }
+]
